@@ -8,22 +8,47 @@
 import UIKit
 
 class DetailSongViewController: UIViewController {
-
+    @IBOutlet weak var imgSong: UIImageView!
+    @IBOutlet weak var progressSong: UIProgressView!
+    @IBOutlet weak var nameSong: UILabel!
+    @IBOutlet weak var previousSongBtn: CircleUIButton!
+    @IBOutlet weak var playSongBtn: CircleUIButton!
+    @IBOutlet weak var nextSongBtn: CircleUIButton!
+    @IBOutlet weak var artistSong: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Detail Screen"
-        // Do any additional setup after loading the view.
+        progressSong.layer.cornerRadius = 8.0
+        progressSong.clipsToBounds = true
+    }
+    var isPaused = true
+
+
+    @IBAction func previousSongTapped(_ sender: Any) {
+        print("previous")
+    }
+
+     
+    @IBAction func playSongTapped(_ sender: Any) {
+        isPaused = !isPaused
+        if isPaused {
+            playSongBtn.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            print("pause")
+           
+        }else{
+            playSongBtn.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            print("play")
+
+            
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func nextSongTapped(_ sender: Any) {
+        print("next")
     }
-    */
-
+    
+    
 }
