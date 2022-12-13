@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qYF-r9-z3A">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -58,7 +58,139 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189.85507246376812" y="-4.0178571428571423"/>
+            <point key="canvasLocation" x="61" y="-66"/>
+        </scene>
+        <!--List Of Song View Controller-->
+        <scene sceneID="a7U-y1-3bQ">
+            <objects>
+                <viewController id="jBP-V7-7jM" customClass="ListOfSongViewController" customModule="Tutorial3478" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gE5-72-dfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1O5-Ea-e8v">
+                                <rect key="frame" x="10" y="0.0" width="394" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="songCell" rowHeight="135" id="Bud-MB-xAu" customClass="SongTableViewCell" customModule="Tutorial3478" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="394" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bud-MB-xAu" id="2uX-R3-ut1">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="Fuw-MH-10G">
+                                                    <rect key="frame" x="0.0" y="11" width="394" height="108"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hay-Trao-Cho-Anh" translatesAutoresizingMaskIntoConstraints="NO" id="pLI-s2-kRN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="108" id="1xj-WU-Np0"/>
+                                                                <constraint firstAttribute="height" constant="108" id="xlx-fd-rez"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hãy trao cho anh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-gK-dSq">
+                                                            <rect key="frame" x="116" y="0.0" width="258" height="26.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sơn Tùng - MTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T8-1q-7A9">
+                                                            <rect key="frame" x="116" y="34" width="258" height="19"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="19" id="x8j-r4-XJZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Hoc-gK-dSq" secondAttribute="trailing" constant="20" id="4Oa-9r-K9s"/>
+                                                        <constraint firstItem="Hoc-gK-dSq" firstAttribute="leading" secondItem="pLI-s2-kRN" secondAttribute="trailing" constant="8" id="DZP-PL-NfI"/>
+                                                        <constraint firstItem="2T8-1q-7A9" firstAttribute="leading" secondItem="Hoc-gK-dSq" secondAttribute="leading" id="Hjx-SR-zRm"/>
+                                                        <constraint firstItem="pLI-s2-kRN" firstAttribute="top" secondItem="Fuw-MH-10G" secondAttribute="top" id="XK4-XW-bXR"/>
+                                                        <constraint firstItem="2T8-1q-7A9" firstAttribute="top" secondItem="Hoc-gK-dSq" secondAttribute="bottom" constant="7.5" id="Z0g-pN-fcc"/>
+                                                        <constraint firstItem="2T8-1q-7A9" firstAttribute="trailing" secondItem="Hoc-gK-dSq" secondAttribute="trailing" id="fH1-fh-87y"/>
+                                                        <constraint firstAttribute="height" constant="108" id="htb-RS-62f"/>
+                                                        <constraint firstItem="pLI-s2-kRN" firstAttribute="leading" secondItem="Fuw-MH-10G" secondAttribute="leading" id="sLt-JV-Cnn"/>
+                                                        <constraint firstItem="Hoc-gK-dSq" firstAttribute="top" secondItem="pLI-s2-kRN" secondAttribute="top" id="wNZ-WT-JRR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="authorOfSong" destination="2T8-1q-7A9" id="BbO-FY-Fff"/>
+                                            <outlet property="imgSong" destination="pLI-s2-kRN" id="Eni-pH-mO7"/>
+                                            <outlet property="nameOfSong" destination="Hoc-gK-dSq" id="Rfa-2K-AUe"/>
+                                            <segue destination="iwL-l0-enN" kind="show" id="1HV-zw-FzP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jBP-V7-7jM" id="Gj7-bY-ePy"/>
+                                    <outlet property="delegate" destination="jBP-V7-7jM" id="SDb-PG-C2l"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mNZ-BV-rYM"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1O5-Ea-e8v" firstAttribute="leading" secondItem="mNZ-BV-rYM" secondAttribute="leading" constant="10" id="6jk-q3-FBS"/>
+                            <constraint firstItem="1O5-Ea-e8v" firstAttribute="top" secondItem="gE5-72-dfZ" secondAttribute="top" id="dRF-Hf-ew4"/>
+                            <constraint firstAttribute="bottom" secondItem="1O5-Ea-e8v" secondAttribute="bottom" id="lWZ-yb-GmE"/>
+                            <constraint firstAttribute="trailing" secondItem="1O5-Ea-e8v" secondAttribute="trailing" constant="10" id="yDe-Ok-Sdv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ewd-sX-dpb"/>
+                    <connections>
+                        <outlet property="listSong" destination="1O5-Ea-e8v" id="hHv-ON-0Y1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N30-7e-5JY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673.913043478261" y="-177.45535714285714"/>
+        </scene>
+        <!--Detail Song View Controller-->
+        <scene sceneID="4uk-P6-Yna">
+            <objects>
+                <viewController id="iwL-l0-enN" customClass="DetailSongViewController" customModule="Tutorial3478" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZW-Ci-lmv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NNl-UP-hCv"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TEx-49-Kxu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3c-jY-r5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477" y="-177"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8sx-Hr-zCm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOh-qb-eqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qYF-r9-z3A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OKy-0i-vqg">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jBP-V7-7jM" kind="relationship" relationship="rootViewController" id="Tzi-Ba-MH4"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="-177.45535714285714"/>
         </scene>
     </scenes>
     <resources>

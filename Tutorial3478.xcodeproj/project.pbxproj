@@ -17,6 +17,9 @@
 		1A86AF952947872A00C30138 /* Tutorial3478Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF942947872A00C30138 /* Tutorial3478Tests.swift */; };
 		1A86AF9F2947872A00C30138 /* Tutorial3478UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF9E2947872A00C30138 /* Tutorial3478UITests.swift */; };
 		1A86AFA12947872A00C30138 /* Tutorial3478UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AFA02947872A00C30138 /* Tutorial3478UITestsLaunchTests.swift */; };
+		1A86AFB1294817A500C30138 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AFB0294817A500C30138 /* SongTableViewCell.swift */; };
+		1A86AFB329481BDA00C30138 /* ListOfSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AFB229481BDA00C30138 /* ListOfSongViewController.swift */; };
+		1AD44A4929484E9E0066AFA6 /* DetailSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		1A86AF9A2947872A00C30138 /* Tutorial3478UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tutorial3478UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A86AF9E2947872A00C30138 /* Tutorial3478UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial3478UITests.swift; sourceTree = "<group>"; };
 		1A86AFA02947872A00C30138 /* Tutorial3478UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial3478UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A86AFB0294817A500C30138 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		1A86AFB229481BDA00C30138 /* ListOfSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfSongViewController.swift; sourceTree = "<group>"; };
+		1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSongViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		1A86AF792947872800C30138 /* Tutorial3478 */ = {
 			isa = PBXGroup;
 			children = (
+				1AD44A4729484E850066AFA6 /* DetailSong */,
+				1A86AFAF2948177200C30138 /* ListSong */,
 				1A86AF7A2947872800C30138 /* AppDelegate.swift */,
 				1A86AF7C2947872800C30138 /* SceneDelegate.swift */,
 				1A86AF7E2947872800C30138 /* ViewController.swift */,
@@ -128,6 +136,23 @@
 				1A86AFA02947872A00C30138 /* Tutorial3478UITestsLaunchTests.swift */,
 			);
 			path = Tutorial3478UITests;
+			sourceTree = "<group>";
+		};
+		1A86AFAF2948177200C30138 /* ListSong */ = {
+			isa = PBXGroup;
+			children = (
+				1A86AFB0294817A500C30138 /* SongTableViewCell.swift */,
+				1A86AFB229481BDA00C30138 /* ListOfSongViewController.swift */,
+			);
+			path = ListSong;
+			sourceTree = "<group>";
+		};
+		1AD44A4729484E850066AFA6 /* DetailSong */ = {
+			isa = PBXGroup;
+			children = (
+				1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */,
+			);
+			path = DetailSong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD44A4929484E9E0066AFA6 /* DetailSongViewController.swift in Sources */,
+				1A86AFB1294817A500C30138 /* SongTableViewCell.swift in Sources */,
 				1A86AF7F2947872800C30138 /* ViewController.swift in Sources */,
+				1A86AFB329481BDA00C30138 /* ListOfSongViewController.swift in Sources */,
 				1A86AF7B2947872800C30138 /* AppDelegate.swift in Sources */,
 				1A86AF7D2947872800C30138 /* SceneDelegate.swift in Sources */,
 				1A86AF852947872800C30138 /* Tutorial3478.xcdatamodeld in Sources */,
