@@ -10,20 +10,18 @@ import UIKit
 class SongTableViewCell: UITableViewCell {
     let identifier = "songCell"
     
-    @IBOutlet weak var imgSong: UIImageView!
-    
+    @IBOutlet weak var songImageView: UIImageView!
     @IBOutlet weak var authorOfSong: UILabel!
     @IBOutlet weak var nameOfSong: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.backgroundColor = UIColor.red.cgColor
+        layer.backgroundColor = UIColor.black.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

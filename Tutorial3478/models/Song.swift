@@ -11,7 +11,7 @@ struct Song {
     var name: String
     var albumName: String
     var artistName: String
-    var imgName: String
+    var imageName: String
     var trackName: String
     
 }
