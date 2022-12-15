@@ -20,9 +20,13 @@
 		1A86AFB1294817A500C30138 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AFB0294817A500C30138 /* SongTableViewCell.swift */; };
 		1A86AFB329481BDA00C30138 /* ListOfSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AFB229481BDA00C30138 /* ListOfSongViewController.swift */; };
 		1AD44A4929484E9E0066AFA6 /* DetailSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */; };
-		1AD44A4E29485CE10066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD44A4D29485CE10066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 */; };
 		1AD44A51294867DF0066AFA6 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD44A50294867DF0066AFA6 /* Song.swift */; };
 		1AD44A5529487E4A0066AFA6 /* CircleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD44A5429487E4A0066AFA6 /* CircleUIButton.swift */; };
+		1AD44A59294AC42E0066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD44A58294AC42E0066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 */; };
+		1AD44A5B294ACF5A0066AFA6 /* GlassAnimal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD44A5A294ACF5A0066AFA6 /* GlassAnimal.mp3 */; };
+		1AD44A5F294ACF870066AFA6 /* saoCungDc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD44A5C294ACF870066AFA6 /* saoCungDc.mp3 */; };
+		1AD44A60294ACF870066AFA6 /* StarBoy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD44A5D294ACF870066AFA6 /* StarBoy.mp3 */; };
+		1AD44A61294ACF870066AFA6 /* ConMuaNgangQua.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD44A5E294ACF870066AFA6 /* ConMuaNgangQua.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +64,13 @@
 		1A86AFB0294817A500C30138 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		1A86AFB229481BDA00C30138 /* ListOfSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfSongViewController.swift; sourceTree = "<group>"; };
 		1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSongViewController.swift; sourceTree = "<group>"; };
-		1AD44A4D29485CE10066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3"; path = "../../../../../Downloads/HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3"; sourceTree = "<group>"; };
 		1AD44A50294867DF0066AFA6 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		1AD44A5429487E4A0066AFA6 /* CircleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUIButton.swift; sourceTree = "<group>"; };
+		1AD44A58294AC42E0066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3"; sourceTree = "<group>"; };
+		1AD44A5A294ACF5A0066AFA6 /* GlassAnimal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GlassAnimal.mp3; sourceTree = "<group>"; };
+		1AD44A5C294ACF870066AFA6 /* saoCungDc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = saoCungDc.mp3; sourceTree = "<group>"; };
+		1AD44A5D294ACF870066AFA6 /* StarBoy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StarBoy.mp3; sourceTree = "<group>"; };
+		1AD44A5E294ACF870066AFA6 /* ConMuaNgangQua.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ConMuaNgangQua.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +175,11 @@
 		1AD44A4C29485CC90066AFA6 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				1AD44A4D29485CE10066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 */,
+				1AD44A5A294ACF5A0066AFA6 /* GlassAnimal.mp3 */,
+				1AD44A5E294ACF870066AFA6 /* ConMuaNgangQua.mp3 */,
+				1AD44A5C294ACF870066AFA6 /* saoCungDc.mp3 */,
+				1AD44A5D294ACF870066AFA6 /* StarBoy.mp3 */,
+				1AD44A58294AC42E0066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -284,10 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD44A4E29485CE10066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 in Resources */,
+				1AD44A5F294ACF870066AFA6 /* saoCungDc.mp3 in Resources */,
+				1AD44A60294ACF870066AFA6 /* StarBoy.mp3 in Resources */,
 				1A86AF8A2947872A00C30138 /* LaunchScreen.storyboard in Resources */,
 				1A86AF872947872900C30138 /* Assets.xcassets in Resources */,
 				1A86AF822947872800C30138 /* Main.storyboard in Resources */,
+				1AD44A59294AC42E0066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 in Resources */,
+				1AD44A61294ACF870066AFA6 /* ConMuaNgangQua.mp3 in Resources */,
+				1AD44A5B294ACF5A0066AFA6 /* GlassAnimal.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

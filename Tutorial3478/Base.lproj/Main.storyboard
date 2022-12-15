@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iwL-l0-enN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qYF-r9-z3A">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -143,8 +143,8 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="authorOfSong" destination="2T8-1q-7A9" id="BbO-FY-Fff"/>
-                                            <outlet property="imgSong" destination="pLI-s2-kRN" id="Eni-pH-mO7"/>
                                             <outlet property="nameOfSong" destination="Hoc-gK-dSq" id="Rfa-2K-AUe"/>
+                                            <outlet property="songImageView" destination="pLI-s2-kRN" id="GrB-2Q-dZ2"/>
                                             <segue destination="iwL-l0-enN" kind="show" id="1HV-zw-FzP"/>
                                         </connections>
                                     </tableViewCell>
@@ -221,14 +221,11 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="lPG-OS-ZV8">
                                         <rect key="frame" x="10" y="398" width="374" height="30"/>
                                         <subviews>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="f67-4m-0sH">
-                                                <rect key="frame" x="0.0" y="18" width="374" height="12"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="12" id="QpV-YZ-sub"/>
-                                                </constraints>
-                                                <color key="progressTintColor" systemColor="systemRedColor"/>
-                                                <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </progressView>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Okn-Ul-TyV">
+                                                <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="thumbTintColor" systemColor="systemCyanColor"/>
+                                            </slider>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Hkh-ev-YNs"/>
@@ -264,7 +261,7 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
-                                                    <imageReference key="image" image="play.fill" catalog="system" symbolScale="large" variableValue="1"/>
+                                                    <imageReference key="image" image="pause.fill" catalog="system" symbolScale="large" variableValue="1"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -313,13 +310,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="TEx-49-Kxu"/>
                     <connections>
-                        <outlet property="artistSong" destination="CwL-zd-7El" id="2J8-NJ-dGX"/>
-                        <outlet property="imgSong" destination="MwF-YQ-nQm" id="7wI-4q-uTe"/>
-                        <outlet property="nameSong" destination="sD1-B1-a8b" id="uWU-NM-zCn"/>
-                        <outlet property="nextSongBtn" destination="H2O-gh-fEj" id="Bwq-ih-LuI"/>
-                        <outlet property="playSongBtn" destination="5VU-vd-bST" id="ktR-sI-c3v"/>
-                        <outlet property="previousSongBtn" destination="Dbl-ui-A9p" id="PFw-S4-1U9"/>
-                        <outlet property="progressSong" destination="f67-4m-0sH" id="9Cg-d8-9rV"/>
+                        <outlet property="artistSongLabel" destination="CwL-zd-7El" id="aAA-PU-iYn"/>
+                        <outlet property="nameSongLabel" destination="sD1-B1-a8b" id="naE-gd-DFN"/>
+                        <outlet property="nextSongButton" destination="H2O-gh-fEj" id="dRr-5q-iLX"/>
+                        <outlet property="playSongButton" destination="5VU-vd-bST" id="cVW-d2-wuK"/>
+                        <outlet property="previousSongButton" destination="Dbl-ui-A9p" id="aoq-WY-3zw"/>
+                        <outlet property="songImageView" destination="MwF-YQ-nQm" id="L8r-Kn-Xs3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3c-jY-r5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -351,15 +347,15 @@
         <image name="Hay-Trao-Cho-Anh" width="660" height="660"/>
         <image name="backward.fill" catalog="system" width="128" height="77"/>
         <image name="forward.fill" catalog="system" width="128" height="77"/>
-        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <image name="pause.fill" catalog="system" width="117" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
