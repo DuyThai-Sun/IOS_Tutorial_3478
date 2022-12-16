@@ -8,10 +8,11 @@
 import Foundation
 
 struct Song {
-    var name: String
-    var albumName: String
-    var artistName: String
-    var imageName: String
-    var trackName: String
+    var name = ""
+    var albumName = ""
+    var artistName = ""
+    var imageName = ""
+    var trackName = ""
+    
     
 }

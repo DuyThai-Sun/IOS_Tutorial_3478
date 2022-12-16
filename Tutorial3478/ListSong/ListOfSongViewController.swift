@@ -12,7 +12,6 @@ class ListOfSongViewController: UIViewController {
         super.viewDidLoad()
         configView()
     }
-    
     private func configView() {
         title = "Music Player"
         listSong.delegate = self
@@ -38,26 +37,31 @@ class ListOfSongViewController: UIViewController {
         Song(name: "Cơn mưa ngang qua", albumName: "VN", artistName: "Sơn Tùng MTP", imageName: "ConMuaNgangQua", trackName: "ConMuaNgangQua"),
     ]
     
-
     @IBOutlet weak var listSong: UITableView!
     
 }
 
-extension ListOfSongViewController: UITableViewDelegate, UITableViewDataSource{
+extension ListOfSongViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return songs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell") as! SongTableViewCell
-        cell.nameOfSong.text = songs[indexPath.row].name
-        cell.authorOfSong.text = songs[indexPath.row].artistName
-        cell.songImageView.image = UIImage(named: songs[indexPath.row].imageName)
+        cell.configSong(song: songs[indexPath.row])
         return cell
     }
-
+   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let detailScreen = storyBoard.instantiateViewController(withIdentifier: "DetailSongScreen") as! DetailSongViewController
+        detailScreen.setUpView(song: songs[indexPath.row], listSong: songs, indexOfSong: indexPath.row)
+        self.navigationController?.pushViewController(detailScreen, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 128
     }
+    
     
 }
