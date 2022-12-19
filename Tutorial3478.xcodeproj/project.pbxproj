@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3D0D05294C2A2E00FBFC07 /* PopUpControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D0D04294C2A2E00FBFC07 /* PopUpControllerViewController.swift */; };
+		1A3D0D07294C441600FBFC07 /* PopUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D0D06294C441600FBFC07 /* PopUpScreen.storyboard */; };
 		1A86AF7B2947872800C30138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF7A2947872800C30138 /* AppDelegate.swift */; };
 		1A86AF7D2947872800C30138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF7C2947872800C30138 /* SceneDelegate.swift */; };
 		1A86AF7F2947872800C30138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF7E2947872800C30138 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A3D0D04294C2A2E00FBFC07 /* PopUpControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpControllerViewController.swift; sourceTree = "<group>"; };
+		1A3D0D06294C441600FBFC07 /* PopUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpScreen.storyboard; sourceTree = "<group>"; };
 		1A86AF772947872800C30138 /* Tutorial3478.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3478.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A86AF7A2947872800C30138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A86AF7C2947872800C30138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 			children = (
 				1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */,
 				1AD44A5429487E4A0066AFA6 /* CircleUIButton.swift */,
+				1A3D0D04294C2A2E00FBFC07 /* PopUpControllerViewController.swift */,
+				1A3D0D06294C441600FBFC07 /* PopUpScreen.storyboard */,
 			);
 			path = DetailSong;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				1A86AF8A2947872A00C30138 /* LaunchScreen.storyboard in Resources */,
 				1A86AF872947872900C30138 /* Assets.xcassets in Resources */,
 				1A86AF822947872800C30138 /* Main.storyboard in Resources */,
+				1A3D0D07294C441600FBFC07 /* PopUpScreen.storyboard in Resources */,
 				1AD44A59294AC42E0066AFA6 /* HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3 in Resources */,
 				1AD44A61294ACF870066AFA6 /* ConMuaNgangQua.mp3 in Resources */,
 				1AD44A5B294ACF5A0066AFA6 /* GlassAnimal.mp3 in Resources */,
@@ -329,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD44A4929484E9E0066AFA6 /* DetailSongViewController.swift in Sources */,
+				1A3D0D05294C2A2E00FBFC07 /* PopUpControllerViewController.swift in Sources */,
 				1A86AFB1294817A500C30138 /* SongTableViewCell.swift in Sources */,
 				1AD44A5529487E4A0066AFA6 /* CircleUIButton.swift in Sources */,
 				1A86AF7F2947872800C30138 /* ViewController.swift in Sources */,
@@ -442,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -521,6 +529,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +558,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
