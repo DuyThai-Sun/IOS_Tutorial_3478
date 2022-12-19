@@ -12,6 +12,7 @@ class ListOfSongViewController: UIViewController {
         super.viewDidLoad()
         configView()
     }
+    
     private func configView() {
         title = "Music Player"
         listSong.delegate = self
