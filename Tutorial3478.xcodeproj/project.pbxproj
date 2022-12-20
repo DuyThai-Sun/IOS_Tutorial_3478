@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A3D0D05294C2A2E00FBFC07 /* PopUpControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D0D04294C2A2E00FBFC07 /* PopUpControllerViewController.swift */; };
-		1A3D0D07294C441600FBFC07 /* PopUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D0D06294C441600FBFC07 /* PopUpScreen.storyboard */; };
 		1A86AF7B2947872800C30138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF7A2947872800C30138 /* AppDelegate.swift */; };
 		1A86AF7D2947872800C30138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF7C2947872800C30138 /* SceneDelegate.swift */; };
 		1A86AF7F2947872800C30138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86AF7E2947872800C30138 /* ViewController.swift */; };
@@ -50,7 +49,7 @@
 
 /* Begin PBXFileReference section */
 		1A3D0D04294C2A2E00FBFC07 /* PopUpControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpControllerViewController.swift; sourceTree = "<group>"; };
-		1A3D0D06294C441600FBFC07 /* PopUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpScreen.storyboard; sourceTree = "<group>"; };
+
 		1A86AF772947872800C30138 /* Tutorial3478.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial3478.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A86AF7A2947872800C30138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A86AF7C2947872800C30138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,7 +172,7 @@
 				1AD44A4829484E9E0066AFA6 /* DetailSongViewController.swift */,
 				1AD44A5429487E4A0066AFA6 /* CircleUIButton.swift */,
 				1A3D0D04294C2A2E00FBFC07 /* PopUpControllerViewController.swift */,
-				1A3D0D06294C441600FBFC07 /* PopUpScreen.storyboard */,
+
 			);
 			path = DetailSong;
 			sourceTree = "<group>";
